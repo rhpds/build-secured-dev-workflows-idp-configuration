@@ -7,7 +7,7 @@ components:
     #   controller.devfile.io/mount-to-devworkspace: 'true'
     #   controller.devfile.io/watch-configmap: 'true'
     container:
-      image: quay.io/devfile/universal-developer-image:ubi8-277c10c
+      image: quay.io/devfile/universal-developer-image:ubi9-3764be6
       env:
         - name: QUARKUS_HTTP_HOST
           value: 0.0.0.0

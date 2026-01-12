@@ -73,21 +73,21 @@ components:
 {%- endif %}
 commands:
   # - id: init-git-config
-  #     exec:
-  #       label: "Configure Git for commit signing"
-  #       component: development-tooling
-  #       commandLine: |
-  #         USERNAME=${DEVWORKSPACE_NAMESPACE%-devspaces}
-  #         git config --global user.email "${USERNAME}@demo.redhat.com"
-  #         git config --global user.name "${USERNAME}"
-  #         git config --global commit.gpgsign true
-  #         git config --global tag.gpgsign true
-  #         git config --global gpg.x509.program /projects/home/bin/gitsign
-  #         git config --global gpg.format x509
-  #         git config --global gitsign.fulcio "$TAS_FULCIO_URL"
-  #         git config --global gitsign.issuer "$TAS_ISSUER_URL"
-  #         git config --global gitsign.rekor "$TAS_REKOR_URL"
-  #         git config --global gitsign.clientid "$TAS_CLIENT_ID"
+  #   exec:
+  #     label: "Configure Git for commit signing"
+  #     component: development-tooling
+  #     commandLine: |
+  #       USERNAME=${DEVWORKSPACE_NAMESPACE%-devspaces}
+  #       git config --global user.email "${USERNAME}@demo.redhat.com"
+  #       git config --global user.name "${USERNAME}"
+  #       git config --global commit.gpgsign true
+  #       git config --global tag.gpgsign true
+  #       git config --global gpg.x509.program /projects/home/bin/gitsign
+  #       git config --global gpg.format x509
+  #       git config --global gitsign.fulcio "$TAS_FULCIO_URL"
+  #       git config --global gitsign.issuer "$TAS_ISSUER_URL"
+  #       git config --global gitsign.rekor "$TAS_REKOR_URL"
+  #       git config --global gitsign.clientid "$TAS_CLIENT_ID"
   - id: package
     exec:
       label: "1. Package the application"
